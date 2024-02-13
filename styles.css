@@ -1,0 +1,135 @@
+body {
+  font-family: 'roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+  background-image: linear-gradient(-15deg, white 50%, rgb(231,84,128) 50%);
+}
+
+.intro-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 48px;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 464px;
+  height: auto;
+}
+
+.profile-name {
+  padding: 0;
+  margin: -4.5rem 0 0;
+  font-size: 3.5rem;
+  color: white;
+}
+
+.about-container {
+  max-width: 768px;
+  padding: 24px 18px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border: solid 1px black;
+  background-color: white;
+}
+
+.image-space {
+  display: none;
+}
+
+.about-header {
+  margin: 0;
+}
+
+.about-info {
+  font-size: 1.25rem;
+  color: rgb(69, 69, 69);
+}
+
+.icon-container {
+  align-self: flex-end;
+}
+
+.icon-container img{
+  height: 24px;
+  width: auto;
+}
+
+@media (max-width: 1024px) {
+  .intro-container {
+    align-items: flex-start;
+    padding: 24px 24px;
+  }
+
+  .profile-container {
+    z-index: 1;
+  }
+
+  .profile-pic {
+    width: 300px;
+  }
+
+  .profile-name {
+    margin: -3.5rem 0 0;
+    font-size: 2.5rem;
+  }
+
+  .about-container {
+    position: relative;
+    display: block;
+    top: 110px;
+    right: 200px;
+    margin-right: -200px;
+  }
+
+  .image-space {
+    display: block;
+    float: left;
+    width: 200px;
+    height: 160px;
+  }
+
+  .icon-container {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-container {
+    flex-direction: column;
+    padding: 24px 24px;
+    align-items: center;
+  }
+
+  .about-container {
+    display: flex;
+    position: static;
+    margin-right: 0;
+    align-items: center;
+    border: 0;
+    background-color: transparent;
+  }
+
+  .image-space {
+    display: none;
+  }
+
+  .icon-container {
+    display: block;
+    align-self: center;
+  }
+}
