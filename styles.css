@@ -11,7 +11,7 @@ body {
   padding: 0;
 }
 
-.intro-container {
+header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,7 +43,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  border: solid 1px black;
+  background: #eee;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   background-color: white;
 }
 
@@ -71,7 +72,7 @@ body {
   width: auto;
 }
 
-.work-container {
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,7 +88,8 @@ body {
 
 .project {
   width: 300px;
-  border: 1px solid black;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  background-color: white;
 }
 
 #p1 {
@@ -143,6 +145,55 @@ body {
   width: auto;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  margin-top: 100px;
+  padding: 48px;
+  background-color: rgb(231,84,128);
+}
+
+.two-pigeons {
+  background-image: url(./images/two-pigeons.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 520px;
+  height: 400px;
+}
+
+.contact-container {
+  width: 256px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 16px;
+  font-size: 1rem;
+}
+
+.contact-container img {
+  height: 24px;
+  width: auto;
+}
+
+.contact-title {
+  font-size: 1.75rem;
+  margin: 0;
+}
+
+.phone-container,
+.email-container {
+  display: flex;
+  gap: 8px;
+}
+
+.icon-contact {
+  display: flex;
+  gap: 16px;
+  align-self: flex-start;
+}
+
 @media (max-width: 1024px) {
   .intro-container {
     align-items: flex-start;
@@ -181,13 +232,13 @@ body {
     display: none;
   }
 
-  .work-container {
+  main {
     margin-top: 124px;
   }
 }
 
 @media (max-width: 480px) {
-  .intro-container {
+  header {
     flex-direction: column;
     padding: 24px 24px;
     align-items: center;
@@ -211,7 +262,16 @@ body {
     align-self: center;
   }
 
-  .work-container {
+  main {
     margin-top: 0;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .two-pigeons {
+    width: 300px;
   }
 }
